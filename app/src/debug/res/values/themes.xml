@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SilentMap" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="preferenceTheme">@style/Theme.Preference</item>
+    </style>
+
+    <style name="FulscreenActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Preference" parent="@style/PreferenceThemeOverlay">
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:textColorSecondary">@color/secondary_text_color</item>
+        <item name="android:textColorHint">@color/secondary_text_color</item>
+    </style>
+
+    <style name="timePickerSecondary">
+        <item name="android:textColorPrimary">@color/secondary_text_color</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:colorControlNormal">@color/secondary</item>
+    </style>
+
+    <style name="checkboxTheme">
+        <item name="buttonTint">@color/secondary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_remove_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_text_input"
+            android:drawableStart="@drawable/custom_title_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/title"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/txColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/color_picker"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etTitle"
+            app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+
+        <RadioGroup
+            android:id="@+id/grColorPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txColor">
+
+            <RadioButton
+
+                android:id="@+id/rbRed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:buttonTint="@color/danger" />
+
+            <RadioButton
+
+                android:id="@+id/rbGreen"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:buttonTint="@color/accept" />
+
+            <RadioButton
+
+                android:id="@+id/rbOrange"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:buttonTint="@color/warning" />
+
+            <RadioButton
+
+                android:id="@+id/rbBlue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:buttonTint="@color/blue" />
+
+            <RadioButton
+
+                android:id="@+id/rbWhite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:buttonTint="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSizePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/size_picker"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txColor"
+            app:layout_constraintTop_toBottomOf="@+id/grColorPicker" />
+
+
+        <com.jem.rubberpicker.RubberSeekBar
+            android:id="@+id/sliderSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            app:dampingRatio="0.3"
+            app:defaultThumbInsideColor="#FFF"
+            app:defaultThumbRadius="16dp"
+            app:elasticBehavior="cubic"
+            app:highlightDefaultThumbOnTouchColor="#86CFC8"
+            app:highlightTrackColor="@color/secondary"
+            app:highlightTrackWidth="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/etTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvSizePicker"
+            app:layout_constraintTop_toBottomOf="@+id/tvSizePicker"
+            app:maxValue="80"
+            app:minValue="20"
+            app:normalTrackColor="#AAAAAA"
+            app:normalTrackWidth="4dp"
+            app:stiffness="300"
+            app:stretchRange="24dp" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderSize">
+
+            <Button
+                android:id="@+id/bAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_main_button"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_secondary_button"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/secondary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

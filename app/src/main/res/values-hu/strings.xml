@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SilentMap</string>
+    <string name="title">Név</string>
+
+    <!-- pickers -->
+    <string name="color_picker">Szín:</string>
+    <string name="size_picker">Méret:</string>
+
+    <!-- radiobutton -->
+    <string name="tag_red_radiobutton">piros</string>
+    <string name="tag_green_radiobutton">zöld</string>
+    <string name="tag_yellow_radiobutton">sárga</string>
+    <string name="tag_blue_radiobutton">kék</string>
+    <string name="tag_white_radiobutton">fehér</string>
+
+    <!-- notification -->
+    <string name="in_territory_notification">Elért egy mentett területet.</string>
+    <string name="out_territory_notification">Egy elmentett területben sem tartózkodik.</string>
+    <string name="location_not_available_notification">Helymegosztás érhető el</string>
+    <string name="start_notification">Helymegosztás bekapcsolása…</string>
+
+    <!-- permission -->
+    <string name="permission_longdescription">A területek figyeléséhez szükséges az engedélye</string>
+    <string name="permission_location_toast">Helymegosztás engedélye szükséges.</string>
+    <string name="permission_audio_toast">Hangosításhoz való engedélye szükséges</string>
+
+    <!-- do not disturbe -->
+    <string name="do_not_disturb_permission_explanation">Our application requires your permission, which you can enable with the button below</string>
+    <string name="cancel">Vissza</string>
+    <string name="ok">Ok</string>
+    <string name="do_not_disturb_permission_warning">Figyelem!</string>
+
+    <string name="bottomnav_list">Lista</string>
+    <string name="bottomnav_map">Térkép</string>
+    <string name="bottomnav_settings">Beállítások</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Üzenet</string>
+    <string name="sync_header">Szinkronizáció</string>
+
+    <!-- Interval Number Preferences -->
+
+    <string name="inetrval_title">Interval numbers</string>
+    <string name="interval_number_title">Interval number</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="run_background_title">Run in the background</string>
+    <string name="background_summary">It can make easier to drain your device.</string>
+    <string name="todo">TODO</string>
+
+    <string name="add">Hozzáadás</string>
+    <string name="edit_bottom_sheet">Szerkesztés</string>
+    <string name="delete_bottom_sheet">Törlés</string>
+    <string name="accept">Elfogad</string>
+    <string name="disturb_permission_title">Utolsó lépés!</string>
+    <string name="we_apologize">Elnézését kérjük!</string>
+    <string name="permission_denied_message">You won\'t be able to use our application until you accept the location permission \n Restart the app for the permission</string>
+
+    <string name="phone_call_permission_rational">Bejövő hívásaihoz való hozzáféréshez szükséges az engedélye</string>
+    <string name="create_alarm_starting_time">Kezdeti időpont:</string>
+    <string name="create_alarm_end_time">Befejezési idő:</string>
+    <string name="create_alarm_repeat">Ismétlés:</string>
+
+    <string name="alarm_card_start">Kezdet:</string>
+    <string name="card_alarm_end">Befejezés:</string>
+    <string name="card_alarm_time">%1$d:%2$d</string>
+    <string name="monday">Hétfő</string>
+    <string name="tuesday">Kedd</string>
+    <string name="wednesday">Szerda</string>
+    <string name="thursday">Csütörtök</string>
+    <string name="friday">Péntek</string>
+    <string name="saturday">Szombat</string>
+    <string name="sunday">Vasárnap</string>
+
+    <string name="update">Módosítás</string>
+    <string name="settings_dark_mode">Sötét mód</string>
+    <string name="settings_notifications">Értesítések</string>
+    <string name="settings_more">Továbbiak:</string>
+    <string name="settings_account">Fiók:</string>
+    <string name="settings_accurate_alarm">Pontos idő</string>
+    <string name="settings_language">Nyelv</string>
+    <string name="search_view">Keresés</string>
+
+
+</resources>

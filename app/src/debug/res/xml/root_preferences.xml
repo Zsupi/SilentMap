@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/inetrval_title">
+
+        <ListPreference
+            app:defaultValue="30 sec"
+            app:entries="@array/interval_entries"
+            app:entryValues="@array/interval_values"
+            app:key="interval_number"
+            app:title="@string/interval_number_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Background application">
+
+        <SwitchPreferenceCompat
+            app:key="run_background"
+            app:title="@string/run_background_title"
+            app:summary = "@string/background_summary"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

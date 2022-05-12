@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SilentMap</string>
+    <string name="title">Title</string>
+
+    <!-- pickers -->
+    <string name="color_picker">Color:</string>
+    <string name="size_picker">Size:</string>
+
+    <!-- radiobutton -->
+    <string name="tag_red_radiobutton">red</string>
+    <string name="tag_green_radiobutton">green</string>
+    <string name="tag_yellow_radiobutton">yellow</string>
+    <string name="tag_blue_radiobutton">blue</string>
+    <string name="tag_white_radiobutton">white</string>
+
+    <!-- notification -->
+    <string name="in_territory_notification">A territory reached</string>
+    <string name="out_territory_notification">you have not reached a saved area</string>
+    <string name="location_not_available_notification">Location is not available</string>
+    <string name="start_notification">Starting location service…</string>
+
+    <!-- permission -->
+    <string name="permission_longdescription">Permission is needed for monitoring if you have entered a created territory</string>
+    <string name="permission_location_toast">Location permission needed</string>
+    <string name="permission_audio_toast">Audio permission needed</string>
+
+    <!-- do not disturbe -->
+    <string name="do_not_disturb_permission_explanation">Our application requires your permission, which you can enable with the button below</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="do_not_disturb_permission_warning">Warning!</string>
+
+    <string name="bottomnav_list">List</string>
+    <string name="bottomnav_map">Map</string>
+    <string name="bottomnav_settings">Settings</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Interval Number Preferences -->
+
+    <string name="inetrval_title">Interval numbers</string>
+    <string name="interval_number_title">Interval number</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="run_background_title">Run in the background</string>
+    <string name="background_summary">It can make easier to drain your device.</string>
+    <string name="todo">TODO</string>
+    <string name="add">Add</string>
+    <string name="edit_bottom_sheet">Edit</string>
+    <string name="delete_bottom_sheet">Delete</string>
+    <string name="accept">Accept</string>
+    <string name="disturb_permission_title">One last step!</string>
+    <string name="we_apologize">We apologize!</string>
+    <string name="permission_denied_message">You won\'t be able to use our application until you accept the location permission \n Restart the app for the permission</string>
+
+    <string name="phone_call_permission_rational">Permission is needed for your incoming calls</string>
+    <string name="create_alarm_starting_time">Start:</string>
+    <string name="create_alarm_end_time">End:</string>
+    <string name="create_alarm_repeat">Repeat:</string>
+
+    <string name="alarm_card_start">Start:</string>
+    <string name="card_alarm_end">End:</string>
+    <string name="card_alarm_time">%1$d:%2$d</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="update">Update</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_more">More:</string>
+    <string name="settings_account">Account:</string>
+    <string name="settings_accurate_alarm">Accurate alarm</string>
+    <string name="settings_language">Language</string>
+    <string name="search_view">Search</string>
+
+
+</resources>
